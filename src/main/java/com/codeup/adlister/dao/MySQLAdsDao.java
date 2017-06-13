@@ -2,8 +2,6 @@ package com.codeup.adlister.dao;
 
 import com.codeup.adlister.models.Ad;
 import com.mysql.cj.jdbc.Driver;
-
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,15 +39,22 @@ public class MySQLAdsDao implements Ads {
 
     @Override
     public Long insert(Ad ad) {
+        String insert = "INSERT INTO ads (title, description, user_id) VALUES (?, ?, ?)";
+        long id = 0;
         try {
-            Statement stmt = connection.createStatement();
-            stmt.executeUpdate(createInsertQuery(ad), Statement.RETURN_GENERATED_KEYS);
-            ResultSet rs = stmt.getGeneratedKeys();
-            rs.next();
-            return rs.getLong(1);
+            PreparedStatement statement = connection.prepareStatement(insert, Statement.RETURN_GENERATED_KEYS);
+            statement.setString(1, ad.getTitle());
+            statement.setString(2, ad.getDescription());
+            statement.setLong(3, ad.getUserId());
+            statement.executeUpdate();
+            ResultSet resultSet = statement.getGeneratedKeys();
+            resultSet.next();
+            id = resultSet.getLong(1);
+            ad.setId(id);
         } catch (SQLException e) {
-            throw new RuntimeException("Error creating a new ad.", e);
+            e.printStackTrace();
         }
+        return id;
     }
 
     private String createInsertQuery(Ad ad) {
