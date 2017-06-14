@@ -51,20 +51,15 @@ public class MySQLUsersDao implements Users {
         }
     }
 
-    @Override
-    public User findById(long userId) {
-        return null;
-    }
-
     private User extractUser(ResultSet rs) throws SQLException {
         if (! rs.next()) {
             return null;
         }
         return new User(
-                rs.getLong("id"),
-                rs.getString("username"),
-                rs.getString("email"),
-                rs.getString("password")
+            rs.getLong("id"),
+            rs.getString("username"),
+            rs.getString("email"),
+            rs.getString("password")
         );
     }
 
