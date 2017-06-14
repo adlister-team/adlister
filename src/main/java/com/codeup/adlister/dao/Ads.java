@@ -11,5 +11,5 @@ public interface Ads {
     Long insert(Ad ad);
 
 
-    Ads findById(long ad_Id);
+    Ad findById(long ad_Id);
 }

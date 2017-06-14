@@ -53,11 +53,12 @@ public class MySQLUsersDao implements Users {
 
     @Override
     public User findById(long userId) {
-        String query = "SELECT ID FROM users WHERE id = ? LIMIT 1";
+        String query = "SELECT * FROM users WHERE id = ? LIMIT 1";
         try {
             PreparedStatement stmt = connection.prepareStatement(query);
             stmt.setLong(1, userId);
-            return  extractUser();
+            ResultSet resultSet = stmt.executeQuery();
+            return  extractUser(resultSet);
         } catch (SQLException e) {
             throw new RuntimeException("Error finding ad.", e);
         }

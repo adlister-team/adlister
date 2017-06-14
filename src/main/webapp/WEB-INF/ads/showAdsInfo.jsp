@@ -27,8 +27,8 @@
     <div>
         <%--<p>username: ${sessionScope.user.username}</p>--%>
         <%--<p>email: ${sessionScope.user.email}</p>--%>
-        <p><${ads.title}"/></p>
-        <p>${ads.description}</p>
+        <h1>${ad.title}</h1>
+        <p>${ad.description}</p>
 
 
 
