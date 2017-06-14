@@ -13,12 +13,9 @@ import java.io.IOException;
 /**
  * Created by emilioalvarado on 6/14/17.
  */
-public class AdsInfoServlet {
-    @WebServlet(name = "controllers.AdsInfoServlet", urlPatterns = "/ads/info")
-    public class AdsIndexServlet extends HttpServlet {
+@WebServlet(name = "controllers.AdsInfoServlet", urlPatterns = "/ads/info")
+public class AdsInfoServlet extends HttpServlet {
         protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            request.setAttribute("ads", DaoFactory.getAdsDao());
-            request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/ads/showAdsInfo.jsp").forward(request, response);
         }
-    }
 }
