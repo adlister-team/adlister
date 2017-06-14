@@ -1,4 +1,6 @@
-<jsp:useBean id="ads" scope="request" type="java"/>
+<%--<jsp:useBean id="ads" scope="request" type="ID"/>--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -21,12 +23,12 @@
 
 
 <div class="container">
-    <h1>Welcome, ${sessionScope.user.username}!</h1>
+    <%--<h1>Welcome, ${sessionScope.user.username}!</h1>--%>
     <div>
         <%--<p>username: ${sessionScope.user.username}</p>--%>
         <%--<p>email: ${sessionScope.user.email}</p>--%>
-        <p>${ad.description}</p>
-        <p>${ad.title}</p>
+        <p><${ads.title}"/></p>
+        <p>${ads.description}</p>
 
 
 
