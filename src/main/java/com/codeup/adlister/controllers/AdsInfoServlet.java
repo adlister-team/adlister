@@ -19,7 +19,7 @@ public class AdsInfoServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         long ID = Long.parseLong(request.getParameter("ID"));
-        Ad ad = DaoFactory.getAdsDao().findById(ID);
+        Ad ad = (Ad) DaoFactory.getAdsDao().findById(ID);
         User user = DaoFactory.getUsersDao().findById(ad.getUserId());
         request.getSession().setAttribute("ad", ad);
         request.getSession().setAttribute("user", user);
