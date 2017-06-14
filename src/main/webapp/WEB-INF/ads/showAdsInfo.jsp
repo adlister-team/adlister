@@ -1,4 +1,5 @@
-<jsp:useBean id="ads" scope="request" type=""/>
+<jsp:useBean id="ads" scope="request" type="java"/>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -24,8 +25,8 @@
     <div>
         <%--<p>username: ${sessionScope.user.username}</p>--%>
         <%--<p>email: ${sessionScope.user.email}</p>--%>
-        <p>${ads.description}</p>
-        <p>${ads.title}</p>
+        <p>${ad.description}</p>
+        <p>${ad.title}</p>
 
 
 

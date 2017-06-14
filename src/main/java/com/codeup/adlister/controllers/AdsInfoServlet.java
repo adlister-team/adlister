@@ -19,12 +19,8 @@ import java.util.List;
 public class AdsInfoServlet extends HttpServlet {
         protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
             List<Ad> ads = DaoFactory.getAdsDao().all();
+            Long id = DaoFactory.getAdsDao().findByID();
             request.setAttribute("ad", ads);
-            request.getRequestDispatcher("/showAdsInfo.jsp")
-                    .forward(request, response);
-
-
-
             request.getRequestDispatcher("/WEB-INF/ads/showAdsInfo.jsp").forward(request, response);
         }
 }
