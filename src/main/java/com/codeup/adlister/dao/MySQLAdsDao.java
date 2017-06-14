@@ -3,9 +3,6 @@ package com.codeup.adlister.dao;
 import com.codeup.adlister.models.Ad;
 import com.mysql.cj.jdbc.Driver;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,8 +54,21 @@ public class MySQLAdsDao implements Ads {
 
 
 
+
     @Override
     public Ad findById(long ad_id) {
+
+        try {
+            String sql = "SELECT * FROM ads WHERE ID = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setLong(1, ad_id);
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            return extractAd(rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+        }
         return null;
     }
 
