@@ -28,6 +28,10 @@
         color: white;
     }
 
+    label {
+        color: white;
+    }
+
 
 
 

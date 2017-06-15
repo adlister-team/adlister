@@ -16,6 +16,7 @@
 
     body {
         background-color: darkblue;
+        font-size: 20px;
     }
 
     h1 {
@@ -37,8 +38,12 @@
 
     a{
         color:white;
+        text-decoration: underline;
     }
 
+    .ads {
+        border: 2px solid white;
+    }
 
 
 
@@ -49,10 +54,10 @@
 
 
 <div class="container text-center">
-    <h1>These are all of the ads from EVERYWHERE!</h1>
+    <h1>Here you go!</h1>
 
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center ads">
             <h2><a href="/ads/show?id=${ad.id}">${ad.title}</a></h2>
             <p>${ad.description}</p>
         </div>

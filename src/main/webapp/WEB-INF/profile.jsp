@@ -15,6 +15,7 @@
 
     body {
         background-color: darkblue;
+        font-size: 20px;
     }
 
     h1 {
@@ -26,11 +27,22 @@
 
     a{
         color:white;
+        text-decoration: underline;
+
     }
 
     p {
-        color: white;
+        color:  greenyellow;
         margin-bottom: 60px;
+    }
+
+
+    .ads {
+        border: 2px solid white;
+    }
+
+    .create-button {
+        margin-top: 30px;
     }
 
 
@@ -43,14 +55,14 @@
         <h1 class="text-center">${sessionScope.user.username}, these are all the ads you have created!</h1>
 
         <c:forEach var="ad" items="${ads}">
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-center ads">
                 <h2><a href="/ads/show?id=${ad.id}">${ad.title}</a></h2>
                 <p>${ad.description}</p>
             </div>
         </c:forEach>
     </div>
 
-    <div>
+    <div class="create-button">
         <a class="btn btn-primary col-md-6 col-md-offset-3 text-center" href="/ads/create">Create Ad</a>
     </div>
 
