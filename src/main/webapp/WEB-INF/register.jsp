@@ -30,6 +30,10 @@
         }
 
 
+        label {
+            color: white;
+        }
+
 
 
 
