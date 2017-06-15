@@ -22,7 +22,7 @@
         color: #FFE74C;
         padding-left: 0;
         paddin-right: 0;
-        margin-top: 100px;
+        margin-top: 30px;
     }
 
 
@@ -35,7 +35,9 @@
         color:greenyellow;
     }
 
-
+    a{
+        color:white;
+    }
 
 
 
@@ -46,11 +48,11 @@
 
 
 
-<div class="container">
-    <h1>Here Are all the ads!</h1>
+<div class="container text-center">
+    <h1>These are all of the ads from EVERYWHERE!</h1>
 
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
+        <div class="col-md-6 text-center">
             <h2><a href="/ads/show?id=${ad.id}">${ad.title}</a></h2>
             <p>${ad.description}</p>
         </div>
