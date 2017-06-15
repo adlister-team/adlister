@@ -16,4 +16,5 @@ public interface Ads {
     List<Ad> findAllById(Long userId);
 
 
+    List<Ad> search(String searchTerm);
 }
