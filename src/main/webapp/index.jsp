@@ -8,8 +8,48 @@
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+
+    <style type="text/css">
+
+        body {
+            background-color: darkblue;
+        }
+
+        h1 {
+            color: #FFE74C;
+            font-size: 260px;
+            font-family: 'Bangers', cursive;
+            padding-left: 0;
+            paddin-right: 0;
+            margin-top: 100px;
+        }
+
+        #ad {
+            color: #00A6FB;
+        }
+
+        #list{
+            color: #FFE74C;
+
+        }
+
+        #er{
+            color: #FE4A49;
+        }
+
+
+
+
+
+    </style>
+
+
     <div class="container">
-        <h1>Welcome to the Adlister!</h1>
+        <h1 class="text-center">
+        <span id="ad" class="text">AD</span>
+        <span id="list" class="text">LIST</span>
+        <span id="er" class="text">ER</span>
+        </h1>
     </div>
 </body>
 </html>
