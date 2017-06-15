@@ -75,7 +75,7 @@ public class MySQLAdsDao implements Ads {
     }
 
     @Override
-    public List<Ad> findAllById(long Id) {
+    public List<Ad> findAllById() {
         PreparedStatement stmt = null;
         try {
             stmt = connection.prepareStatement("SELECT * FROM ads WHERE user_id = 1 ");
