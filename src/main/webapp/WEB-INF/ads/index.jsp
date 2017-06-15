@@ -9,6 +9,43 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
+
+
+
+<style type="text/css">
+
+    body {
+        background-color: darkblue;
+    }
+
+    h1 {
+        color: #FFE74C;
+        padding-left: 0;
+        paddin-right: 0;
+        margin-top: 100px;
+    }
+
+
+    h2 {
+       color: yellow;
+    }
+
+
+    p {
+        color:greenyellow;
+    }
+
+
+
+
+
+
+</style>
+
+
+
+
+
 <div class="container">
     <h1>Here Are all the ads!</h1>
 
@@ -17,6 +54,7 @@
             <h2><a href="/ads/show?id=${ad.id}">${ad.title}</a></h2>
             <p>${ad.description}</p>
         </div>
+
     </c:forEach>
 </div>
 
