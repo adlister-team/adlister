@@ -13,6 +13,7 @@ public interface Ads {
 
     Ad findById(long ad_Id);
 
-    List<Ad> findAllById(long Id);
+    List<Ad> findAllById();
+
 
 }

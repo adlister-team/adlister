@@ -37,6 +37,7 @@
 
         </div>
         <ul class="nav navbar-nav navbar-right">
+            <li><a href="/register">Register</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/logout">Logout</a></li>
             <li><a href="/profile">My Profile</a></li>
