@@ -10,6 +10,7 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
 
+
 <style type="text/css">
 
     body {
