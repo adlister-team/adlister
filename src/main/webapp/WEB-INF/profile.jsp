@@ -25,6 +25,10 @@
             margin-top: 100px;
         }
 
+        p{
+            color: white;
+        }
+
 
 
 
@@ -35,6 +39,14 @@
 
     <div class="container">
         <h1>Welcome, ${sessionScope.user.username}!</h1>
+
+        <div>
+            <p>Title: ${ad.title}</p>
+            <p>Description: ${ad.description}</p>
+        </div>
+        <div>
+            <a class="btn btn-block btn-primary" href="/ads/create">Create Ad</a>
+        </div>
     </div>
 
 </body>

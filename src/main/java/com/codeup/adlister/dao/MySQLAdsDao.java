@@ -35,6 +35,8 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
+
+
     @Override
     public Long insert(Ad ad) {
         try {
@@ -70,6 +72,18 @@ public class MySQLAdsDao implements Ads {
 
         }
         return null;
+    }
+
+    @Override
+    public List<Ad> findAllById(long Id) {
+        PreparedStatement stmt = null;
+        try {
+            stmt = connection.prepareStatement("SELECT * FROM ads WHERE id = user_id");
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error retrieving all ads.", e);
+        }
     }
 
     private Ad extractAd(ResultSet rs) throws SQLException {
