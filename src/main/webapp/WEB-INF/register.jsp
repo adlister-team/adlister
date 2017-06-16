@@ -12,36 +12,6 @@
 
 
 
-
-
-    <style type="text/css">
-
-        body {
-            background-color: darkblue;
-        }
-
-        h1 {
-            color: #FFE74C;
-            font-size: 260px;
-            font-family: 'Bangers', cursive;
-            padding-left: 0;
-            paddin-right: 0;
-            margin-top: 100px;
-        }
-
-
-        label {
-            color: white;
-        }
-
-
-
-
-
-
-    </style>
-
-
     <div class="container">
         <h1>Please fill in your information.</h1>
         <form action="/register" method="post">
