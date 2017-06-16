@@ -22,9 +22,6 @@
                 <h2><a href="/ads/show?id=${ad.id}">${ad.title}</a></h2>
                 <p>${ad.description}</p>
                 <a class="btn btn-primary" href="/ads/edit?id=${ad.id}">Edit</a>
-
-
-
             </div>
         </c:forEach>
     </div>

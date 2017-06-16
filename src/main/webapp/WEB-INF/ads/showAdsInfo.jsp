@@ -13,10 +13,6 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
 
-
-
-
-
 <div class="container">
 
     <h1>Thank you for enjoying this ad.</h1>
@@ -29,17 +25,14 @@
 
 <div class="container">
     <%--<h1>Welcome, ${sessionScope.user.username}!</h1>--%>
-    <div>
-        <%--<p>username: ${sessionScope.user.username}</p>--%>
-        <%--<p>email: ${sessionScope.user.email}</p>--%>
+    <div class="ad-box">
         <p>Title: ${ad.title}</p>
         <p>Description: ${ad.description}</p>
-
-
-
-
-
+        <p>contact: ${sessionScope.user.username} at ${sessionScope.user.email}</p>
     </div>
+</div>
+
+</div>
 </div>
 
 </body>

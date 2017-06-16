@@ -14,9 +14,9 @@
 
     <div class="container">
         <h1 class="text-center">
-        <span id="ad" class="text">AD</span>
-        <span id="list" class="text">LIST</span>
-        <span id="er" class="text">ER</span>
+        <span id="ad" class="title-text">AD</span>
+        <span id="list" class="title-text">LIST</span>
+        <span id="er" class="title-text">ER</span>
         </h1>
     </div>
 </body>
