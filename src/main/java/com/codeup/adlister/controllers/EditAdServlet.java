@@ -26,8 +26,7 @@ public class EditAdServlet extends HttpServlet {
 
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        User user = (User) request.getSession().getAttribute("user");
-        request.setAttribute("ads", DaoFactory.getAdsDao().edit(request.getParameter("edit")));
+        request.setAttribute("ads", DaoFactory.getAdsDao().edit(request.getParameter("title",)));
         response.sendRedirect("/profile");
     }
 }
