@@ -9,39 +9,7 @@
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-    <style type="text/css">
 
-        body {
-            background-color: darkblue;
-        }
-
-        h1 {
-            color: #FFE74C;
-            font-size: 260px;
-            font-family: 'Bangers', cursive;
-            padding-left: 0;
-            paddin-right: 0;
-            margin-top: 100px;
-        }
-
-        #ad {
-            color: #00A6FB;
-        }
-
-        #list{
-            color: #FFE74C;
-
-        }
-
-        #er{
-            color: #FE4A49;
-        }
-
-
-
-
-
-    </style>
 
 
     <div class="container">

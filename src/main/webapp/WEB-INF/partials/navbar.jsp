@@ -1,31 +1,3 @@
-<style type="text/css">
-
-.container-fluid {
-    background-color: black;
-}
-
-
-.navbar-default .navbar-nav>li>a {
-    color: white;
-}
-
-.navbar-default .navbar-brand {
-    color: white;
-}
-
-
-.navbar-default .navbar-brand:hover {
-    color:white;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-    color: white;
-}
-
-</style>
-
-
-
 
 
 <nav class="navbar navbar-default">

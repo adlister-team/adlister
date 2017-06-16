@@ -17,29 +17,6 @@
 
 
 
-<style type="text/css">
-
-    body {
-        background-color: darkblue;
-    }
-
-    h1 {
-        color: #FFE74C;
-        padding-left: 0;
-        paddin-right: 0;
-        margin-top: 100px;
-    }
-
-    p {
-        color:white;
-    }
-
-
-
-</style>
-
-
-
 <div class="container">
 
     <h1>Thank you for enjoying this ad.</h1>

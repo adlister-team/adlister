@@ -11,43 +11,6 @@
 
 
 
-<style type="text/css">
-
-    body {
-        background-color: darkblue;
-        font-size: 20px;
-    }
-
-    h1 {
-        color: #FFE74C;
-        padding-left: 0;
-        paddin-right: 0;
-        margin-top: 40px;
-    }
-
-    a{
-        color:white;
-        text-decoration: underline;
-
-    }
-
-    p {
-        color:  greenyellow;
-        margin-bottom: 30px;
-    }
-
-
-    .ads {
-        border: 2px solid white;
-    }
-
-    .create-button {
-        margin-top: 30px;
-    }
-
-
-</style>
-
 
 
 
