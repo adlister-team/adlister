@@ -18,6 +18,6 @@ public interface Ads {
 
     List<Ad> search(String searchTerm);
 
-    Long edit(String title, String description, Long id);
+    Long edit(Ad ad);
 
 }
