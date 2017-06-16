@@ -17,4 +17,7 @@ public interface Ads {
 
 
     List<Ad> search(String searchTerm);
+
+    Long edit(Ad ad);
+
 }
