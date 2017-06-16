@@ -112,9 +112,7 @@ public class MySQLAdsDao implements Ads {
             stmt.setString(2, ad.getDescription());
             stmt.setLong(3, ad.getId());
             stmt.executeUpdate();
-            ResultSet rs = stmt.getGeneratedKeys();
-            rs.next();
-            return rs.getLong(1);
+            return null;
         } catch (SQLException e) {
             throw new RuntimeException("Error editing  ad.", e);
         }
