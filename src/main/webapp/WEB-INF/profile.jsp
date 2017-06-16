@@ -33,7 +33,7 @@
 
     p {
         color:  greenyellow;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
 
@@ -58,6 +58,10 @@
             <div class="col-md-6 text-center ads">
                 <h2><a href="/ads/show?id=${ad.id}">${ad.title}</a></h2>
                 <p>${ad.description}</p>
+                <a class="btn btn-primary" href="/ads/edit">Edit</a>
+
+
+
             </div>
         </c:forEach>
     </div>
